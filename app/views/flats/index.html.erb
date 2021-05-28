@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="cards">
+    <% @flats.each do |flat| %>
+        <div class="card" style="width: 14rem">
+          <h3><%= flat.name %></h3>
+          <p><%= flat.address %></p>
+          <p><%= flat.description %></p>
+          <i class="fa fa-gbp" aria-hidden="true"><%= flat.price_per_night %></i>
+          <i class="fa fa-users" aria-hidden="true"><%= flat.number_of_guests %></i>
+        </div>
+    <% end %>
+  </div>
+</div>
+
+
+
