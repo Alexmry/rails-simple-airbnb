@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="card">
+    <h3><%= @flat.name %></h3>
+    <p><%= @flat.address %></p>
+    <p class="border-bottom"><%= @flat.description %></p>
+    <i class="fa fa-gbp m-2" aria-hidden="true"><%= @flat.price_per_night %></i>
+    <i class="fa fa-users m-2" aria-hidden="true"><%= @flat.number_of_guests %></i>
+  </div>
+</div>
+<%= link_to "back", root_path %>

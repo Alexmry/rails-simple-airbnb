@@ -1,11 +1,31 @@
 // Place all the styles related to the Flats controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
 .cards {
   flex-grow: 1;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
   padding: 16px;
-  background-color: blue;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background-color: #caf7e3;
+}
+
+.card {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+//.grid {
+  //align-items: strech;
+//}
+@media screen and (max-width: 993px ) {
+  .cards{
+    flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  padding: 16px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background-color: #caf7e3;
+  }
 }

@@ -1,15 +1,17 @@
 <div class="container">
   <div class="cards ">
     <% @flats.each do |flat| %>
-        <div class="card" style="width: 14rem">
+        <div class="card text-center" style="width: 14rem">
           <h3><%= flat.name %></h3>
           <p><%= flat.address %></p>
           <p><%= flat.description %></p>
-          <i class="fa fa-gbp" aria-hidden="true"><%= flat.price_per_night %></i>
-          <i class="fa fa-users" aria-hidden="true"><%= flat.number_of_guests %></i>
+          <i class="fa fa-gbp m-2" aria-hidden="true"><%= flat.price_per_night %></i>
+          <i class="fa fa-users m-2 border-bottom" aria-hidden="true"><%= flat.number_of_guests %></i>
+          <%= link_to "more details", flat_path(flat)  %>
         </div>
     <% end %>
   </div>
+    <%= link_to 'add a flat', new_flat_path, class:'btn btn-outline-primary'%>
 </div>
 
 
